@@ -26,20 +26,13 @@ public class Moneda extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moneda);
 
-        int currentTheme = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
-        if(currentTheme == Configuration.UI_MODE_NIGHT_YES) {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.md_theme_dark_background));
-        } else {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.md_theme_light_background));
-        }
-
         spMedida1 = (Spinner) findViewById(R.id.spMedida1);
         spMedida2 = (Spinner) findViewById(R.id.spMedida2);
         etValor1 = (EditText) findViewById(R.id.etValor1);
         etValor2 = (EditText) findViewById(R.id.etValor2);
         tvTitulo = (TextView) findViewById(R.id.tvTitulo);
 
-        tvTitulo.setText(getClass().getSimpleName());
+        tvTitulo.setText(R.string.moneda);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(Moneda.this, android.R.layout.simple_spinner_item, medidas);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

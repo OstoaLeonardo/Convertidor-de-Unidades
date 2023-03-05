@@ -1,19 +1,18 @@
 <resources>
     <string name="app_name">Convertidor de Unidades</string>
-    <string name="btn_longitud">Longitud</string>
-    <string name="btn_peso">Peso</string>
-    <string name="btn_volumen">Volumen</string>
-    <string name="btn_temperatura">Temperatura</string>
-    <string name="btn_moneda">Moneda</string>
-    <string name="btn_tiempo">Tiempo</string>
+    <string name="longitud">Longitud</string>
+    <string name="peso">Peso</string>
+    <string name="volumen">Volumen</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="moneda">Moneda</string>
+    <string name="tiempo">Tiempo</string>
     <string name="edValor">0</string>
-    <string name="title_activity_peso">Peso</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

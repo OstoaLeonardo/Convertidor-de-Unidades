@@ -18,13 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int currentTheme = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
-        if(currentTheme == Configuration.UI_MODE_NIGHT_YES) {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.md_theme_dark_background));
-        } else {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.md_theme_light_background));
-        }
-
         btnLongitud = (Button) findViewById(R.id.btnLongitud);
         btnPeso = (Button) findViewById(R.id.btnPeso);
         btnVolumen = (Button) findViewById(R.id.btnVolumen);
