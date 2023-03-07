@@ -1,15 +1,11 @@
 package com.example.convertidordeunidades;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends MenuTopBar {
 
     private Button btnLongitud, btnPeso, btnVolumen, btnTemperatura, btnMoneda, btnTiempo;
 
@@ -17,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setupToolbarMain();
 
         btnLongitud = (Button) findViewById(R.id.btnLongitud);
         btnPeso = (Button) findViewById(R.id.btnPeso);

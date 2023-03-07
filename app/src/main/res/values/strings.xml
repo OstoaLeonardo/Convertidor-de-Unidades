@@ -7,6 +7,9 @@
     <string name="moneda">Moneda</string>
     <string name="tiempo">Tiempo</string>
     <string name="edValor">0</string>
+    <string name="tema_claro_item_menu">Modo Claro</string>
+    <string name="tema_oscuro_item_menu">Modo Oscuro</string>
+    <string name="github_item_menu">Ir a GitHub</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

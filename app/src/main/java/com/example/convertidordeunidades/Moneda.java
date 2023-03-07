@@ -1,9 +1,5 @@
 package com.example.convertidordeunidades;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -14,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class Moneda extends AppCompatActivity {
+public class Moneda extends MenuTopBar {
 
     Spinner spMedida1, spMedida2;
     EditText etValor1, etValor2;
@@ -25,6 +21,8 @@ public class Moneda extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moneda);
+
+        setupToolbar();
 
         spMedida1 = (Spinner) findViewById(R.id.spMedida1);
         spMedida2 = (Spinner) findViewById(R.id.spMedida2);
